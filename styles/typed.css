@@ -1,0 +1,26 @@
+.Intro {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Headline {
+  font-size: 3rem;
+  margin: 0;
+}
+.Intro .Headline .accent {
+  color: #e94e1b;
+}
+
+@media screen and (max-width: 768px) {
+  .Headline {
+    font-size: 2rem;
+  }
+}
+
+.text2 {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0.5rem 0;
+}

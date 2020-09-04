@@ -1,5 +1,7 @@
 import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 import { Global, css } from '@emotion/core';
+import '../styles/Chatbox.css';
+import '../styles/typed.css';
 
 import customTheme from '@/styles/theme';
 
