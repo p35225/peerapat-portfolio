@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useInterval from '@use-it/interval';
 import { motion } from 'framer-motion';
+import { Box } from '@chakra-ui/core';
 
 const messages = [
   { text: 'Hi, i am very sad' },
@@ -18,7 +19,7 @@ export default function Chatbox() {
   }, 2000);
 
   return (
-    <div className="app">
+    <Box className="app" p={1 / 2} mr={20}>
       <div className="walkthrough">
         {messages.map((message, index) => {
           const even = index % 2 === 0;
@@ -30,7 +31,7 @@ export default function Chatbox() {
           return <Message key={index} message={message} />;
         })}
       </div>
-    </div>
+    </Box>
   );
 }
 
@@ -57,9 +58,9 @@ function Message({ message }) {
       initial={{ rotate: -5, scale: 0 }}
       animate={{ rotate: 0, scale: 1 }}
     >
-      <div className="avatar">🐸</div>
+      <div className="avatar">🐷</div>
       <div className="text">{message.text}</div>
-      <div className="avatar">🐙</div>
+      <div className="avatar">🦊</div>
     </motion.div>
   );
 }

@@ -1,7 +1,8 @@
-import { ThemeProvider, CSSReset } from '@chakra-ui/core';
+import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core';
 import { Global, css } from '@emotion/core';
 import '../styles/Chatbox.css';
 import '../styles/typed.css';
+import '../styles/styles.css';
 
 import customTheme from '@/styles/theme';
 
@@ -31,8 +32,10 @@ const GlobalStyle = ({ children }) => {
 const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={customTheme}>
-      <GlobalStyle />
-      <Component {...pageProps} />
+      <ColorModeProvider>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </ColorModeProvider>
     </ThemeProvider>
   );
 };

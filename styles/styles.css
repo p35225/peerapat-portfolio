@@ -1,0 +1,14 @@
+.shadow {
+  border-radius: 2rem;
+  box-shadow: 3px 3px 3px #202125, -3px -3px 3px #353535;
+  padding: 2rem;
+}
+
+.particle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}

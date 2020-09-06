@@ -1,26 +1,37 @@
-.Intro {
-  min-height: 40vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .Headline {
   font-size: 3rem;
-  margin: 0;
+  margin-left: 60px;
+  padding-right: 40px;
 }
-.Intro .Headline .accent {
+.Headline .accent {
   color: #e94e1b;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .Headline {
     font-size: 2rem;
   }
-}
+} */
 
 .text2 {
   font-size: 1.5rem;
   max-width: 600px;
-  margin: 0.5rem 0;
+  margin-left: 35px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.Head-typing {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 0 40px; */
+}
+
+.Head-typing .head-idk {
+  margin: 0 0 0 80px;
+  /* padding-right: 120px; */
+  background-color: rgba(23, 25, 35, 0.8);
+  border: 1px solid #e2e8f0;
 }
