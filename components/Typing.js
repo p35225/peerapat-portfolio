@@ -4,8 +4,8 @@ import { Button, Flex, Box } from '@chakra-ui/core';
 
 export default function Typing() {
   return (
-    <Box className="Head-typing" p={1 / 2}>
-      <div className="head-idk">
+    <Box className="Head-typing" p={1 / 2} ml={16}>
+      <Box className="head-idk">
         <h1 className="Headline">
           <Typed
             loop
@@ -30,7 +30,7 @@ export default function Typing() {
           fresh Graduate of 2020 years. I'm very interested and enjoy in Web
           development field.
         </p>
-      </div>
+      </Box>
     </Box>
   );
 }

@@ -19,8 +19,8 @@ export default function Chatbox() {
   }, 2000);
 
   return (
-    <Box className="app" p={1 / 2} mr={20}>
-      <div className="walkthrough">
+    <Box className="app" p={1 / 2} mr={3}>
+      <Box className="walkthrough">
         {messages.map((message, index) => {
           const even = index % 2 === 0;
           if (messageToShow + 1 === index) {
@@ -30,7 +30,7 @@ export default function Chatbox() {
 
           return <Message key={index} message={message} />;
         })}
-      </div>
+      </Box>
     </Box>
   );
 }
