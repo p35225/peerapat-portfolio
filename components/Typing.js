@@ -1,12 +1,30 @@
 import React from 'react';
 import Typed from 'react-typed';
-import { Button, Flex, Box } from '@chakra-ui/core';
+import { Button, Flex, Box, Heading } from '@chakra-ui/core';
 
 export default function Typing() {
   return (
-    <Box className="Head-typing" p={1 / 2} ml={16}>
-      <Box className="head-idk">
-        <h1 className="Headline">
+    <Box
+      className="Type-Heading1"
+      p={1 / 2}
+      // mx={16}
+      minH="75vh"
+      display="flex"
+      justifyContent="center"
+      flexDirection="column"
+    >
+      <Box
+        className="Type-Heading2"
+        bg="rgba(23, 25, 35, 0.8)"
+        border="1px solid #e2e8f0"
+      >
+        <Heading
+          className="Type-Heading3"
+          as="h1"
+          pt={8}
+          fontSize="3rem"
+          ml="60px"
+        >
           <Typed
             loop
             typeSpeed={80}
@@ -24,12 +42,11 @@ export default function Typing() {
             cursorChar="|"
             className="typed"
           />
-        </h1>
-        <p className="text2">
-          Hi, this is my example portfolio. My name's Peerapat Chanawanno. I'm a
-          fresh Graduate of 2020 years. I'm very interested and enjoy in Web
-          development field.
-        </p>
+        </Heading>
+        <Box as="p" fontSize="1.5rem" maxW="600px" ml="35px" p="0 20px 40px 0">
+          Hi, this is my example portfolio. My name's Peerapat Chanawanno. If
+          you want to know more about me, you can click about page.
+        </Box>
       </Box>
     </Box>
   );

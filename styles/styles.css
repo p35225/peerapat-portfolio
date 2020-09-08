@@ -12,3 +12,42 @@
   width: 100vw;
   height: 100vh;
 }
+
+.--technologies {
+  background: #3e4153;
+}
+
+.--frameworks {
+  background: #1671cf;
+}
+
+.--databases {
+  background: #64cf16;
+}
+
+.--cms {
+  background: #e94e1b;
+}
+
+.--others {
+  background: #3f9142;
+}
+
+.--design {
+  background: #d03333;
+}
+
+.--softskill {
+  background: #870557;
+}
+
+/* filter */
+.active {
+  background: transparent;
+  border: none;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin: 0 10px;
+  opacity: 1.5;
+  border-bottom: 2px solid #fff;
+}

@@ -11,11 +11,11 @@ import {
 import Navbar from '@/components/Navbar';
 
 export default function experience() {
-  const { colorMode } = useColorMode();
-  const secondaryTextColor = {
-    light: 'gray.700',
-    dark: 'gray.400'
-  };
+  // const { colorMode } = useColorMode();
+  // const secondaryTextColor = {
+  //   light: 'gray.700',
+  //   dark: 'gray.400'
+  // };
   return (
     <>
       <Navbar></Navbar>

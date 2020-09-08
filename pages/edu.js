@@ -1,24 +1,13 @@
-import React from 'react';
-import {
-  useColorMode,
-  Heading,
-  Text,
-  Flex,
-  Stack,
-  Link,
-  Icon
-} from '@chakra-ui/core';
+import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import Container from '@/components/Container';
+import { Button, Collapse, Box, Image } from '@chakra-ui/core';
 
 export default function edu() {
-  const { colorMode } = useColorMode();
-  const secondaryTextColor = {
-    light: 'gray.700',
-    dark: 'gray.400'
-  };
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
+      <Box w="1140px" maxW="94%" m="0 auto"></Box>
     </>
   );
 }

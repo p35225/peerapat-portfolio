@@ -5,7 +5,7 @@ import Chatbox from '@/components/Chatbox';
 
 const Header = () => {
   return (
-    <Flex align="center" justify="space-between" wrap="wrap" p={1 / 2}>
+    <Flex flexWrap="wrap" justifyContent="center" m="0 auto">
       <Typing />
       <Chatbox />
     </Flex>

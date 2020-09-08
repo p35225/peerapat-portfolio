@@ -1,0 +1,94 @@
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import Filter from '@/components/Filter';
+import { skills } from '../../data/skills';
+import { Button, Collapse, Box, Image, PseudoBox, Text } from '@chakra-ui/core';
+
+export default function Technicalskil() {
+  const [filter, setFilter] = useState('');
+  const skillCategories = Object.keys(skills);
+  const [show, setShow] = useState(false);
+  const handleToggle = () => setShow(!show);
+
+  return (
+    <Box
+      m="2rem 0"
+      borderRadius="10px"
+      border="2px solid #555"
+      boxShadow="5px 5px 0 #555"
+      as="section"
+    >
+      <PseudoBox
+        as="button"
+        bg="#f1c40f"
+        color="#000"
+        borderRadius="10px"
+        onClick={handleToggle}
+        display="inline-block"
+        fontSize="2rem"
+        p="5px"
+        fontWeight="Bold"
+        _hover={{
+          transition: 'all 0.3s ease-out',
+          backgroundColor: '#92FDF2'
+        }}
+      >
+        <Text
+          as="p"
+          fontWeight="Normal"
+          display="inline-block"
+          p=".375rem .75rem .3125rem 1rem"
+          bg="#7C5E10"
+          color="#fff"
+          maxW="165px"
+          maxH="99px"
+          transform="rotate(-16deg) translateX(-5px)"
+        >
+          (click!!!!)
+        </Text>
+        Technical skills{' '}
+      </PseudoBox>
+      <Collapse mt={4} isOpen={show}>
+        <Box as="div" display="flex" flexDirection="row" flexWrap="wrap">
+          <Box as="main" w="70%" minW="280px" flexGrow="1" m="8px 0">
+            <div>
+              <div
+                data-testid="filters"
+                style={{ padding: '0 0 14px 14px', margin: '0 2rem' }}
+              >
+                Filter:
+                {skillCategories.map((skill) => (
+                  <Filter
+                    key={skill}
+                    name={skill}
+                    setFilter={setFilter}
+                    currentFilter={filter}
+                  />
+                ))}
+              </div>
+            </div>
+            {skillCategories.map((category) => {
+              const cat = skills[category];
+              if (filter !== '' && filter !== category) return;
+              return cat.map((ability, index) => (
+                <Box
+                  as="span"
+                  display="inline-block"
+                  p="0.25rem 0.5rem"
+                  m="0 0.5rem 0.5rem"
+                  borderRadius="99px"
+                  // bg="#333"
+                  color="#fff"
+                  key={`${category}-${index + 1}`}
+                  className={`--${category}`}
+                >
+                  {ability}
+                </Box>
+              ));
+            })}
+          </Box>
+        </Box>
+      </Collapse>
+    </Box>
+  );
+}

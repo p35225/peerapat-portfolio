@@ -16,11 +16,11 @@ export default function Chatbox() {
 
   useInterval(() => {
     setMessageToShow((messageToShow) => messageToShow + 1);
-  }, 2000);
+  }, 3000);
 
   return (
-    <Box className="app" p={1 / 2} mr={3}>
-      <Box className="walkthrough">
+    <div className="app" p={1 / 2}>
+      <div className="walkthrough">
         {messages.map((message, index) => {
           const even = index % 2 === 0;
           if (messageToShow + 1 === index) {
@@ -30,8 +30,8 @@ export default function Chatbox() {
 
           return <Message key={index} message={message} />;
         })}
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }
 
