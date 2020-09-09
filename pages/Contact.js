@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/core';
 import Navbar from '@/components/Navbar';
 
-export default function experience() {
+export default function Contact() {
   // const { colorMode } = useColorMode();
   // const secondaryTextColor = {
   //   light: 'gray.700',

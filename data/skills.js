@@ -6,12 +6,10 @@ export const skills = {
     'JavaScript',
     'TypeScript',
     'Rest',
-    'ES6',
     'NodeJs'
   ],
-  frameworks: ['React', 'Gatsby', 'Next.js'],
+  frameworks: ['React', 'Next.js'],
   databases: ['MySQL', 'MongoDB', 'Firebase'],
-  cms: ['WordPress'],
-  others: ['Vscode', 'Xcode', 'macOS', 'Windows'],
+  others: ['Vscode', 'Xcode', 'Git'],
   design: ['Figma']
 };

@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import Container from '@/components/Container';
 import { Button, Collapse, Box, Image } from '@chakra-ui/core';
 
-export default function edu() {
+export default function Projects() {
   return (
     <>
       <Navbar />

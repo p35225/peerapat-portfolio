@@ -8,7 +8,7 @@ export default function Typing() {
       className="Type-Heading1"
       p={1 / 2}
       // mx={16}
-      minH="75vh"
+      minH="30vh"
       display="flex"
       justifyContent="center"
       flexDirection="column"
@@ -17,6 +17,7 @@ export default function Typing() {
         className="Type-Heading2"
         bg="rgba(23, 25, 35, 0.8)"
         border="1px solid #e2e8f0"
+        m="0 40px"
       >
         <Heading
           className="Type-Heading3"
@@ -44,8 +45,8 @@ export default function Typing() {
           />
         </Heading>
         <Box as="p" fontSize="1.5rem" maxW="600px" ml="35px" p="0 20px 40px 0">
-          Hi, this is my example portfolio. My name's Peerapat Chanawanno. If
-          you want to know more about me, you can click about page.
+          Hi, this is my example portfolio. If you want to know more about me,
+          you can click about page.
         </Box>
       </Box>
     </Box>

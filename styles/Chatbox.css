@@ -2,7 +2,7 @@
 
 .app {
   font-family: 'Chelsea Market';
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,7 @@
 
 .walkthrough {
   width: 100%;
-  margin: 0 50px;
+  margin: 30px 10px;
   background: #2c2d30;
   border-radius: 2rem;
   min-height: 500px;
@@ -19,12 +19,13 @@
   justify-content: center;
   align-items: center;
   box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
-  padding: 2rem;
+  padding: 1rem;
+  min-width: 442px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 375px) {
   .walkthrough {
-    min-width: 500px;
+    min-width: 340px;
   }
 }
 
@@ -120,6 +121,7 @@
   display: flex;
   align-items: center;
   font-weight: bolder;
+  /* min-height: 60px; */
 }
 
 .message:nth-child(even) .text {

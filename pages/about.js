@@ -15,8 +15,9 @@ import {
 import Technicalskil from '@/components/About-skill/Technicalskill';
 import Softskills from '@/components/About-skill/Softskills';
 import LinkContacts from '@/components/LinkContacts';
+import ImageAnimation from '@/components/ImageAnimation';
 
-export default function edu() {
+export default function About() {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
 
@@ -79,8 +80,12 @@ export default function edu() {
               pl="20px"
             >
               <span style={{ padding: '0 0 0 30px' }}>Hi, everyone</span> who
-              coming to saw my portfolio. I'm just a someone who have passionate
-              to coding and interest in web design and i also be a coffee lover.
+              coming to saw my portfolio. My name is{' '}
+              <span style={{ borderBottom: '2px solid #fff' }}>
+                Peerapat Chanawanno
+              </span>
+              , i'm just a person who have passionate to coding and interest in
+              web development and i also be a coffee lover.
             </Text>
             <Text
               fontFamily="Courier Prime"
@@ -117,15 +122,17 @@ export default function edu() {
             </List>
           </Box>
           <Box as="div" m="1.5rem 1.5rem 0 1.5rem">
-            <Image
+            {/* <Image
               rounded="full"
               size="300px"
               maxH="300px"
               maxW="300px"
               src="/myimg.jpg"
               alt="myself"
-            />
-            <Button variantColor="teal" m="2rem 0 0 5rem">
+              border="5px solid #fff"
+            /> */}
+            <ImageAnimation />
+            <Button variantColor="teal" m="2rem 0 0 5rem" fontWeight="Bold">
               Download CV
             </Button>
           </Box>
@@ -145,6 +152,15 @@ export default function edu() {
             clicking the button below my picture.
           </Text>
         </Box>
+        <Box
+          p="0"
+          m="0"
+          bg="#fff"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          overflow="hidden"
+        ></Box>
       </Box>
     </>
   );

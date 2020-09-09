@@ -68,9 +68,9 @@ export default function Technicalskil() {
               </div>
             </div>
             {skillCategories.map((category) => {
-              const cat = skills[category];
+              const cate = skills[category];
               if (filter !== '' && filter !== category) return;
-              return cat.map((ability, index) => (
+              return cate.map((ability, index) => (
                 <Box
                   as="span"
                   display="inline-block"

@@ -55,7 +55,7 @@ export default function Softskills() {
         <Box as="div" display="flex" flexDirection="row" flexWrap="wrap">
           <Box as="main" w="70%" minW="280px" flexGrow="1" m="8px 0">
             {[
-              'Able to handle prioritize',
+              'Able to handle priority',
               'Problem solving',
               'Creative thinking',
               'Flexible and adaptive'
