@@ -44,7 +44,7 @@ const Navbar = ({ children }) => {
             Home
           </Button>
         </NextLink>
-        <NextLink href="/About" passHref>
+        <NextLink href="/about" passHref>
           <Button
             as="a"
             variant="ghost"

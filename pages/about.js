@@ -17,7 +17,7 @@ import Softskills from '@/components/About-skill/Softskills';
 import LinkContacts from '@/components/LinkContacts';
 import ImageAnimation from '@/components/ImageAnimation';
 
-export default function About() {
+export default function about() {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
 
@@ -122,15 +122,6 @@ export default function About() {
             </List>
           </Box>
           <Box as="div" m="1.5rem 1.5rem 0 1.5rem">
-            {/* <Image
-              rounded="full"
-              size="300px"
-              maxH="300px"
-              maxW="300px"
-              src="/myimg.jpg"
-              alt="myself"
-              border="5px solid #fff"
-            /> */}
             <ImageAnimation />
             <Button variantColor="teal" m="2rem 0 0 5rem" fontWeight="Bold">
               Download CV
