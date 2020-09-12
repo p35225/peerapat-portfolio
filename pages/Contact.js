@@ -17,6 +17,7 @@ export default function Contact() {
           justifyContent="center"
         >
           <Stack
+            zIndex="3"
             textAlign="center"
             borderRadius="10px"
             border="2px solid #555"

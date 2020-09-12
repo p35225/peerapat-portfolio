@@ -5,6 +5,7 @@ import { Box, Heading } from '@chakra-ui/core';
 export default function Typing() {
   return (
     <Box
+      zIndex="3"
       className="Type-Heading1"
       my="2rem"
       display="flex"

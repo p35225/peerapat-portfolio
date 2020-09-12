@@ -26,6 +26,7 @@ const GlobalStyle = ({ children }) => {
             justify-content: space-between;
             flex-direction: column;
             min-height: 95vh;
+            background-color: #1a202c;
           }
         `}
       />
