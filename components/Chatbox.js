@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import useInterval from '@use-it/interval';
 import { motion } from 'framer-motion';
-import { Box } from '@chakra-ui/core';
 
 const messages = [
-  { text: 'Hi, i am very sad' },
-  { text: 'Why dude!' },
-  { text: 'I gonna find a job' },
-  { text: 'Let me suggest some position' },
-  { text: 'Oh! Thx allah' }
+  { text: 'Hello, who are you?' },
+  { text: 'I just a newbie developer' },
+  { text: 'How, can i know more about you?' },
+  { text: 'Go to peerapat-ch.dev i list a short story about myself.' },
+  { text: 'Oh that great!' }
 ];
 
 export default function Chatbox() {
@@ -19,7 +18,7 @@ export default function Chatbox() {
   }, 3000);
 
   return (
-    <div className="app" p={1 / 2}>
+    <div className="app-chat" p={1 / 2}>
       <div className="walkthrough">
         {messages.map((message, index) => {
           const even = index % 2 === 0;

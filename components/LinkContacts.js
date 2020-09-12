@@ -4,7 +4,7 @@ import { Flex, Link, IconButton, Divider, Box } from '@chakra-ui/core';
 export default function LinkContacts() {
   return (
     <Flex align="center" my={4} direction="row">
-      <div>
+      <Box>
         <Link href="https://github.com/p35225" title="GitHub" isExternal>
           <IconButton
             aria-label="GitHub"
@@ -18,11 +18,11 @@ export default function LinkContacts() {
             }}
           />
         </Link>
-        <Divider orientation="horizontal" borderColor="#ffb91f" border="2px" />
-        <Link href="/" title="Line" isExternal>
+        <Divider orientation="horizontal" borderColor="#F7C948" border="2px" />
+        <Link href="/" title="Youtube">
           <IconButton
-            aria-label="Line"
-            icon="line"
+            aria-label="Youtube"
+            icon="youtube"
             size="lg"
             color="gray.500"
             variant="ghost"
@@ -32,11 +32,15 @@ export default function LinkContacts() {
             }}
           />
         </Link>
-        <Divider orientation="horizontal" borderColor="#ffb91f" border="2px" />
-        <Link href="/" title="Twitch" isExternal>
+        <Divider orientation="horizontal" borderColor="#F7C948" border="2px" />
+        <Link
+          href="https://open.spotify.com/user/pppp%21%21%21?si=InNr7h2ATJOnqZBrGwXrrA"
+          title="Spotify"
+          isExternal
+        >
           <IconButton
-            aria-label="Twitch"
-            icon="twitch"
+            aria-label="Spotify"
+            icon="spotify"
             size="lg"
             color="gray.500"
             variant="ghost"
@@ -46,7 +50,7 @@ export default function LinkContacts() {
             }}
           />
         </Link>
-        <Divider orientation="horizontal" borderColor="#ffb91f" border="2px" />
+        <Divider orientation="horizontal" borderColor="#F7C948" border="2px" />
         <Link href="mailto:pee35225@gmail.com" title="Email" isExternal>
           <IconButton
             aria-label="Email"
@@ -60,7 +64,7 @@ export default function LinkContacts() {
             }}
           />
         </Link>
-      </div>
+      </Box>
     </Flex>
   );
 }

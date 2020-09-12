@@ -1,9 +1,9 @@
 import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core';
-import styled from 'styled-components';
 import { Global, css } from '@emotion/core';
 import '../styles/Chatbox.css';
 import '../styles/typed.css';
 import '../styles/styles.css';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import customTheme from '@/styles/theme';
 
@@ -39,9 +39,9 @@ const App = ({ Component, pageProps }) => {
     <ThemeProvider theme={customTheme}>
       <ColorModeProvider>
         <GlobalStyle>
-          <Wrapper>
+          <div>
             <Component {...pageProps} />
-          </Wrapper>
+          </div>
         </GlobalStyle>
       </ColorModeProvider>
     </ThemeProvider>
@@ -49,14 +49,3 @@ const App = ({ Component, pageProps }) => {
 };
 
 export default App;
-
-// display: flex;
-// flex-direction: column;
-// min-height: 100vh;
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  min-height: 95vh;
-`;

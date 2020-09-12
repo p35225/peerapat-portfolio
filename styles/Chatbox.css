@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-
-.app {
+.app-chat {
   font-family: 'Chelsea Market';
   min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 500px;
 }
 
 .walkthrough {
   width: 100%;
-  margin: 30px 10px;
+  margin: 30px 20px;
   background: #2c2d30;
   border-radius: 2rem;
   min-height: 500px;
@@ -19,6 +18,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
+  -webkit-box-shadow: inset 3px 3px 3px #202125, inset -3px -3px 3px #353535;
   padding: 1rem;
   min-width: 442px;
 }

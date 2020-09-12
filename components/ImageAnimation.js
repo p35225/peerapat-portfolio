@@ -12,9 +12,6 @@ export default function ImageAnimation() {
           duration: 0.2
         }
       }}
-      whileTap={{
-        scale: 2
-      }}
     >
       <Image
         rounded="full"

@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import {
-  Button,
-  Collapse,
   Box,
-  Image,
   Stack,
   Heading,
   Text,
   List,
   ListItem,
-  Divider
+  Divider,
+  PseudoBox,
+  Link
 } from '@chakra-ui/core';
 import Technicalskil from '@/components/About-skill/Technicalskill';
 import Softskills from '@/components/About-skill/Softskills';
 import LinkContacts from '@/components/LinkContacts';
 import ImageAnimation from '@/components/ImageAnimation';
+import Counter from '@/components/Counter';
+import Timeline from '@/components/Timeline';
 
 export default function about() {
   const [show, setShow] = useState(false);
@@ -29,13 +30,13 @@ export default function about() {
           mt="2rem"
           as="h1"
           display="inline-block"
-          fontSize="3rem"
           lineHeight="1.8269230769rem"
           mb="1.25rem"
-          p=".375rem .75rem .3125rem 1rem"
+          p=".375rem .75rem .65rem 1rem"
           bg="#37bd2e"
           transform="rotate(-4deg) translateX(-5px)"
           ml="3rem"
+          fontSize="60px"
         >
           Personal info.
         </Heading>
@@ -45,8 +46,8 @@ export default function about() {
             display="flex"
             m="2rem 0"
             borderRadius="10px"
-            border="2px solid #ffb91f"
-            boxShadow="5px 5px 0 #ffb91f"
+            border="2px solid #F7C948"
+            boxShadow="5px 5px 0 #F7C948"
           >
             <div>
               <LinkContacts />
@@ -70,7 +71,7 @@ export default function about() {
               transform="rotate(-3deg) translateX(-5px)"
               ml="3rem"
             >
-              I'm Programmer and Gamer
+              I'm Developer and Gamer
             </Heading>
             <Text
               fontFamily="Courier Prime"
@@ -79,21 +80,22 @@ export default function about() {
               lineHeight="1.9791666667rem"
               pl="20px"
             >
-              <span style={{ padding: '0 0 0 30px' }}>Hi, everyone</span> who
-              coming to saw my portfolio. My name is{' '}
+              <span style={{ padding: '0 0 0 30px' }}>Welcome, everyone</span>{' '}
+              to see my portfolio. I'm{' '}
               <span style={{ borderBottom: '2px solid #fff' }}>
                 Peerapat Chanawanno
               </span>
-              , i'm just a person who have passionate to coding and interest in
-              web development and i also be a coffee lover.
+              , i only a person who have passionate to coding and interested in
+              technology. Fan of Coffee and play video game.
             </Text>
             <Text
               fontFamily="Courier Prime"
-              fontSize="2rem"
+              fontSize="1.75rem"
+              fontWeight="Bold"
               lineHeight="1.9791666667rem"
               pl="20px"
               my="20px"
-              display="inline-block"
+              // display="inline-block"
             >
               <span style={{ color: 'tomato' }}>Job position</span>: Currently
               i'm a fresh graduate of 2020 years
@@ -123,35 +125,71 @@ export default function about() {
           </Box>
           <Box as="div" m="1.5rem 1.5rem 0 1.5rem">
             <ImageAnimation />
-            <Button variantColor="teal" m="2rem 0 0 5rem" fontWeight="Bold">
-              Download CV
-            </Button>
+            <Link
+              href="https://www.dropbox.com/s/2dpqsjswedoqgxh/Peerapat_resume.pdf?dl=1"
+              isExternal
+            >
+              <PseudoBox
+                as="button"
+                verticalAlign="middle"
+                border="none"
+                outline="none"
+                backgroundImage="linear-gradient(90deg, #0349a6 0%, #15c27b 51%, #0349a6 100%)"
+                textAlign="center"
+                backgroundSize="200% auto"
+                borderRadius="5px"
+                color="#fff"
+                p="10px 30px"
+                m="2rem 0 0 4rem"
+                fontSize="18px"
+                fontWeight="bold"
+                transition="all .4s ease"
+                _hover={{
+                  color: '#fff',
+                  backgroundPosition: 'right center'
+                }}
+              >
+                Download CV
+              </PseudoBox>
+            </Link>
           </Box>
         </Stack>
         <Technicalskil />
         <Softskills />
         <Divider
           orientation="horizontal"
-          borderColor="rgb(233, 78, 27)"
+          borderColor="#C52707"
           border="2px"
           opacity="2"
-          my="2rem"
+          mt="2.5rem"
         />
-        <Box as="div" textAlign="center" mb="3rem">
-          <Text as="p" fontSize="1.3rem" fontFamily="Courier Prime">
-            Dear recruiters, you can find my up-to-date CV as a PDF file by
-            clicking the button below my picture.
+        <Counter />
+        <Divider
+          orientation="horizontal"
+          borderColor="#C52707"
+          border="2px"
+          opacity="2"
+          mb="2.5rem"
+        />
+
+        <Heading as="h1" fontSize="3rem" textAlign="center" fontFamily="Rubik">
+          Timeline
+        </Heading>
+        <Timeline />
+
+        <Divider
+          orientation="horizontal"
+          borderColor="#C52707"
+          border="2px"
+          opacity="2"
+          my="3.5rem"
+        />
+        <Box as="div" textAlign="center" mb="1.5rem">
+          <Text as="p" fontSize="1.3rem" fontFamily="Courier Prime" mb="4rem">
+            Dear HR, you can find my up-to-date CV as a PDF file by clicking the
+            button below my picture.
           </Text>
         </Box>
-        <Box
-          p="0"
-          m="0"
-          bg="#fff"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          overflow="hidden"
-        ></Box>
       </Box>
     </>
   );

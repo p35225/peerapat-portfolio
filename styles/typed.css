@@ -1,3 +1,13 @@
 .Type-Heading1 .Type-Heading2 .Type-Heading3 .accent {
   color: #e94e1b;
 }
+
+.Type-Heading1 .Type-Heading2 .Type-Heading3 .Type-Heading4 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Type-Heading1 .Type-Heading2 .Type-Heading3 .Type-Heading4 {
+    font-size: 1.5rem;
+  }
+}

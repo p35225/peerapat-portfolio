@@ -1,16 +1,28 @@
 import { params } from '@/components/particle';
 import Particles from 'react-particles-js';
-import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
-import Container from '@/components/Container';
-import styled from 'styled-components';
+import Typing from '@/components/Typing';
+import Chatbox from '@/components/Chatbox';
+import { Flex } from '@chakra-ui/core';
 
 export default function Home() {
   return (
     <>
       <Particles params={params} className="particle" />
       <Navbar />
-      <Header />
+      <Flex
+        as="section"
+        minH="75vh"
+        display="flex"
+        justify="center"
+        flexDirection="row"
+        flexWrap="wrap"
+      >
+        <>
+          <Typing />
+          <Chatbox />
+        </>
+      </Flex>
     </>
   );
 }

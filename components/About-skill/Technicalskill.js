@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import Filter from '@/components/Filter';
 import { skills } from '../../data/skills';
-import { Button, Collapse, Box, Image, PseudoBox, Text } from '@chakra-ui/core';
+import { Collapse, Box, PseudoBox, Text } from '@chakra-ui/core';
 
 export default function Technicalskil() {
   const [filter, setFilter] = useState('');
@@ -20,12 +19,13 @@ export default function Technicalskil() {
     >
       <PseudoBox
         as="button"
-        bg="#f1c40f"
+        bg="#F7C948"
         color="#000"
         borderRadius="10px"
         onClick={handleToggle}
         display="inline-block"
         fontSize="2rem"
+        fontFamily="Roboto"
         p="5px"
         fontWeight="Bold"
         _hover={{
@@ -46,15 +46,18 @@ export default function Technicalskil() {
         >
           (click!!!!)
         </Text>
-        Technical skills{' '}
+        <span style={{ margin: '0 1rem' }}>Technical skills</span>
       </PseudoBox>
       <Collapse mt={4} isOpen={show}>
         <Box as="div" display="flex" flexDirection="row" flexWrap="wrap">
           <Box as="main" w="70%" minW="280px" flexGrow="1" m="8px 0">
             <div>
               <div
-                data-testid="filters"
-                style={{ padding: '0 0 14px 14px', margin: '0 2rem' }}
+                style={{
+                  padding: '0 0 14px 14px',
+                  margin: '0 2rem',
+                  fontSize: '1.1rem'
+                }}
               >
                 Filter:
                 {skillCategories.map((skill) => (
@@ -79,6 +82,7 @@ export default function Technicalskil() {
                   borderRadius="99px"
                   // bg="#333"
                   color="#fff"
+                  fontSize="1.10rem"
                   key={`${category}-${index + 1}`}
                   className={`--${category}`}
                 >

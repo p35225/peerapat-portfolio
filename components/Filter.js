@@ -14,7 +14,7 @@ const Filter = ({ name, setFilter, currentFilter }) => {
       name={name}
       className={currentFilter === name ? 'active' : undefined}
       onClick={clickHandler}
-      style={{ margin: '0 10px' }}
+      style={{ margin: '0 10px', fontSize: '1.1rem' }}
     >
       {name}
     </button>

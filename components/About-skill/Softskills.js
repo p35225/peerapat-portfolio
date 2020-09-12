@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import Filter from '@/components/Filter';
 import { skills } from '../../data/skills';
-import { Button, Collapse, Box, Image, Text, PseudoBox } from '@chakra-ui/core';
+import { Collapse, Box, Text, PseudoBox } from '@chakra-ui/core';
 
 export default function Softskills() {
-  const [filter, setFilter] = useState('');
-  const skillCategories = Object.keys(skills);
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
 
@@ -20,12 +16,13 @@ export default function Softskills() {
     >
       <PseudoBox
         as="button"
-        bg="#f1c40f"
+        bg="#F7C948"
         color="#000"
         borderRadius="10px"
         onClick={handleToggle}
         display="inline-block"
         fontSize="2rem"
+        fontFamily="Roboto"
         p="5px"
         fontWeight="Bold"
         _hover={{
@@ -36,10 +33,7 @@ export default function Softskills() {
         <Text
           as="p"
           fontWeight="Normal"
-          // borderBottom="6px solid #000"
           display="inline-block"
-          // lineHeight="1.8269230769rem"
-          // mb="1.25rem"
           p=".375rem .75rem .3125rem 1rem"
           bg="#7C5E10"
           color="#fff"
@@ -49,7 +43,7 @@ export default function Softskills() {
         >
           (click!!!!)
         </Text>
-        Soft skills
+        <span style={{ margin: '0 1rem' }}>Soft skills</span>
       </PseudoBox>
       <Collapse mt={4} isOpen={show}>
         <Box as="div" display="flex" flexDirection="row" flexWrap="wrap">
@@ -57,8 +51,9 @@ export default function Softskills() {
             {[
               'Able to handle priority',
               'Problem solving',
-              'Creative thinking',
-              'Flexible and adaptive'
+              'Willing to learn new technology',
+              'Flexible and adaptive',
+              'Well-organised person'
             ].map((item, index) => (
               <Box
                 as="span"
@@ -67,6 +62,7 @@ export default function Softskills() {
                 m="0 0.5rem 0.5rem"
                 borderRadius="99px"
                 color="#fff"
+                fontSize="1.1rem"
                 key={`softskill-${index + 1}`}
                 className="--softskill"
               >

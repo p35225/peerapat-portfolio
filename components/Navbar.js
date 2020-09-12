@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { useColorMode, Button, Flex, Box, IconButton } from '@chakra-ui/core';
+import { Button, Flex } from '@chakra-ui/core';
 import styled from '@emotion/styled';
 
 const StickyNav = styled(Flex)`
@@ -22,12 +22,12 @@ const Navbar = ({ children }) => {
         width="100%"
         as="nav"
         p={{ base: '8px', sm: '8px', md: '16px', lg: '16px' }}
-        fontWeight="bold"
-        // flexWrap="wrap"
+        fontWeight="Bold"
       >
         <NextLink href="/" passHref>
           <Button
             as="a"
+            fontSize="1.3rem"
             variant="ghost"
             // p={[1, 4]}
             px={{ base: '8px', sm: '8px', md: '16px', lg: '16px' }}
@@ -47,6 +47,7 @@ const Navbar = ({ children }) => {
         <NextLink href="/about" passHref>
           <Button
             as="a"
+            fontSize="1.3rem"
             variant="ghost"
             // p={[1, 4]}
             px={{ base: '8px', sm: '8px', md: '16px', lg: '16px' }}
@@ -66,6 +67,7 @@ const Navbar = ({ children }) => {
         <NextLink href="/Projects" passHref>
           <Button
             as="a"
+            fontSize="1.3rem"
             variant="ghost"
             // p={[1, 4]}
             px={{ base: '8px', sm: '8px', md: '16px', lg: '16px' }}
@@ -85,6 +87,7 @@ const Navbar = ({ children }) => {
         <NextLink href="/Contact" passHref>
           <Button
             as="a"
+            fontSize="1.3rem"
             variant="ghost"
             // p={[1, 4]}
             px={{ base: '8px', sm: '8px', md: '16px', lg: '16px' }}
@@ -102,9 +105,9 @@ const Navbar = ({ children }) => {
           </Button>
         </NextLink>
       </StickyNav>
-      <Flex as="main" justifyContent="center" flexDirection="column" px={8}>
+      {/* <Flex as="main" justifyContent="center" flexDirection="column" px={8}>
         {children}
-      </Flex>
+      </Flex> */}
     </>
   );
 };
