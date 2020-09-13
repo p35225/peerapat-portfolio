@@ -1,5 +1,6 @@
 import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core';
 import { Global, css } from '@emotion/core';
+import Head from 'next/head';
 import '../styles/Chatbox.css';
 import '../styles/typed.css';
 import '../styles/styles.css';
@@ -10,6 +11,12 @@ import customTheme from '@/styles/theme';
 const GlobalStyle = ({ children }) => {
   return (
     <>
+      <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+        <meta content="#ffffff" name="theme-color" />
+        <meta content="#ffffff" name="msapplication-TileColor" />
+      </Head>
       <CSSReset />
       <Global
         styles={css`
@@ -26,7 +33,6 @@ const GlobalStyle = ({ children }) => {
             justify-content: space-between;
             flex-direction: column;
             min-height: 95vh;
-            background-color: #1a202c;
           }
         `}
       />
@@ -38,7 +44,7 @@ const GlobalStyle = ({ children }) => {
 const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={customTheme}>
-      <ColorModeProvider>
+      <ColorModeProvider value="dark">
         <GlobalStyle>
           <div>
             <Component {...pageProps} />
