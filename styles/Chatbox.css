@@ -56,12 +56,10 @@
   animation: loader 1.5s infinite;
 }
 
-/* no margin on the far right dot */
 .dots > div:not(:last-child) {
   margin-right: 8px;
 }
 
-/* put a delay on each of the dots */
 .dots > div:first-child {
   animation-delay: 0.1s;
 }
@@ -122,7 +120,6 @@
   display: flex;
   align-items: center;
   font-weight: bolder;
-  /* min-height: 60px; */
 }
 
 .message:nth-child(even) .text {

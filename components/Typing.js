@@ -51,8 +51,8 @@ export default function Typing() {
           // justifyContent="center"
           // alignItems="center"
         >
-          Hi, this is my personal portfolio. If you want to know more about me,
-          you can click about page.
+          Hi, this is my portfolio. If you want to know more about me, you can
+          click on the page.
         </Box>
       </Box>
     </Box>

@@ -3,11 +3,11 @@ import useInterval from '@use-it/interval';
 import { motion } from 'framer-motion';
 
 const messages = [
-  { text: 'Hello, who are you?' },
-  { text: 'I just a newbie developer' },
-  { text: 'How, can i know more about you?' },
+  { text: 'Hello, What you can do?' },
+  { text: 'Play game and develop something....' },
+  { text: 'Hmmmm!' },
   { text: 'Go to peerapat-ch.dev i list a short story about myself.' },
-  { text: 'Oh that great!' }
+  { text: 'That great' }
 ];
 
 export default function Chatbox() {

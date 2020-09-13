@@ -6,6 +6,9 @@ class MyDocument extends Document {
       <Html lang="en">
         <Html>
           <Head>
+            <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+            <meta content="#ffffff" name="theme-color" />
+            <meta content="#ffffff" name="msapplication-TileColor" />
             <link rel="icon" href="/favicon.ico" />
             <link
               href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"

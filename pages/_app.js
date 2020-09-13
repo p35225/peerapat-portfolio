@@ -5,6 +5,8 @@ import '../styles/Chatbox.css';
 import '../styles/typed.css';
 import '../styles/styles.css';
 import 'react-medium-image-zoom/dist/styles.css';
+import SEO from '../next-seo.config';
+import { DefaultSeo } from 'next-seo';
 
 import customTheme from '@/styles/theme';
 
@@ -13,9 +15,6 @@ const GlobalStyle = ({ children }) => {
     <>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-        <meta content="#ffffff" name="theme-color" />
-        <meta content="#ffffff" name="msapplication-TileColor" />
       </Head>
       <CSSReset />
       <Global
@@ -30,9 +29,8 @@ const GlobalStyle = ({ children }) => {
 
           #__next {
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
-            min-height: 95vh;
+            min-height: 100vh;
           }
         `}
       />
@@ -46,9 +44,8 @@ const App = ({ Component, pageProps }) => {
     <ThemeProvider theme={customTheme}>
       <ColorModeProvider value="dark">
         <GlobalStyle>
-          <div>
-            <Component {...pageProps} />
-          </div>
+          <DefaultSeo {...SEO} />
+          <Component {...pageProps} />
         </GlobalStyle>
       </ColorModeProvider>
     </ThemeProvider>
@@ -56,3 +53,10 @@ const App = ({ Component, pageProps }) => {
 };
 
 export default App;
+
+// #__next {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     min-height: 95vh;
+// }

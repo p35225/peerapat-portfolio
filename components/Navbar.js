@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 import { Button, Flex } from '@chakra-ui/core';
 import styled from '@emotion/styled';
 
-const StickyNav = styled(Flex)`
+const BlurNav = styled(Flex)`
   position: sticky;
   z-index: 10;
   top: 0;
@@ -14,7 +14,7 @@ const StickyNav = styled(Flex)`
 const Navbar = ({ children }) => {
   return (
     <>
-      <StickyNav
+      <BlurNav
         display="flex"
         flexDirection="row"
         justifyContent="flex-end"
@@ -104,7 +104,7 @@ const Navbar = ({ children }) => {
             Contact
           </Button>
         </NextLink>
-      </StickyNav>
+      </BlurNav>
       {/* <Flex as="main" justifyContent="center" flexDirection="column" px={8}>
         {children}
       </Flex> */}
