@@ -12,6 +12,7 @@ import {
 import Navbar from '@/components/Navbar';
 import { params } from '@/components/particle';
 import Particles from 'react-particles-js';
+import SEO from '../components/Seo';
 
 export default function Contact() {
   return (
