@@ -24,7 +24,8 @@ export default function Contact() {
             boxShadow="5px 5px 0 #555"
             my="6rem"
             className="stack-contact"
-            w="55%"
+            w={{ base: '280px', sm: '380px', md: '520px ', lg: '761px' }}
+            // w="55%"
           >
             <PseudoBox
               _hover={{
