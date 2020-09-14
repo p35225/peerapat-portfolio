@@ -142,7 +142,7 @@ export default function about() {
                   borderRadius="5px"
                   color="#fff"
                   p="10px 30px"
-                  m="2rem 0 0 4rem"
+                  m="2rem 0 0 2.5rem"
                   fontSize="18px"
                   fontWeight="bold"
                   transition="all .4s ease"
@@ -151,7 +151,7 @@ export default function about() {
                     backgroundPosition: 'right center'
                   }}
                 >
-                  Download CV
+                  Download Resume
                 </PseudoBox>
               </Link>
             </Box>
@@ -193,8 +193,8 @@ export default function about() {
           />
           <Box as="div" textAlign="center" mb="1.5rem">
             <Text as="p" fontSize="1.3rem" fontFamily="Courier Prime" mb="4rem">
-              Dear HR, you can find my up-to-date CV as a PDF file by clicking
-              the button below my picture.
+              Dear HR, you can find my up-to-date Resume as a PDF file by
+              clicking the button below my picture.
             </Text>
           </Box>
         </Box>
