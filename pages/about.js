@@ -128,7 +128,7 @@ export default function about() {
             <Box as="div" m="1.5rem 1.5rem 0 1.5rem">
               <ImageAnimation />
               <Link
-                href="https://www.dropbox.com/s/j5bj5s87z2y5me0/Peerapat_%28Resume_SD%29.pdf?dl=1"
+                href="https://www.dropbox.com/s/5n63an2sbd42zay/Peerapat_Resume_be.pdf?dl=1"
                 isExternal
               >
                 <PseudoBox
