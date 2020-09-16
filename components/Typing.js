@@ -52,7 +52,7 @@ export default function Typing() {
           // alignItems="center"
         >
           Hi, this is my portfolio. If you want to know more about me, you can
-          click on the page.
+          click on about page.
         </Box>
       </Box>
     </Box>
