@@ -29,9 +29,9 @@ export default function Typing() {
             backSpeed={20}
             strings={[
               "Hi, my name is <span class='accent'>Peerapat</span>.",
-              "I'm a <span class='accent'>Fresh Graduate</span>.",
+              "I'm a <span class='accent'>Software Developer</span>.",
               "I'm an <span class='accent'>Gamer</span>.",
-              "I'm a <span class='accent'>creative</span> person."
+              "I'm a <span class='accent'>Coffee Lover</span>."
             ]}
             smartBackspace
             backDelay={1000}

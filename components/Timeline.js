@@ -19,6 +19,61 @@ export default function Timeline() {
         p="1em 0"
         listStyleType="none"
       >
+        <ListItem as="li" my="2rem">
+          <Text
+            as="span"
+            className="direction-l-t"
+            display="relative"
+            p="6px 0"
+            fontWeight="Bold"
+            fontSize="1.35rem"
+          >
+            Nov 2020 - 2021
+          </Text>
+          <Box as="div" className="direction-r" position="relative" w="300px">
+            <Box
+              as="div"
+              className="flag-wrapper"
+              position="relative"
+              display="flex"
+              textAlign="center"
+              justifyContent="flex-start"
+            >
+              <Text
+                as="span"
+                className="flag"
+                position="relative"
+                display="inline"
+                p="6px 10px"
+                fontSize="1.5rem"
+                fontWeight="Bold"
+                textAlign="right"
+              >
+                IT One Co., Ltd
+              </Text>
+            </Box>
+            <Box
+              as="div"
+              className="desc"
+              mx="3rem"
+              fontSize="1.1rem"
+              lineHeight="1.5em"
+            >
+              Start working for Customer Services Team (CS)
+            </Box>
+            <Box
+              as="div"
+              className="desc"
+              m="1rem 3rem"
+              fontSize="1.1rem"
+              fontWeight="Bold"
+              lineHeight="1.5em"
+            >
+              Job Position: Application Development Analyst
+            </Box>
+          </Box>
+        </ListItem>
+
         <ListItem as="li" my="3rem">
           <Text
             as="span"

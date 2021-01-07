@@ -92,15 +92,15 @@ export default function about() {
               </Text>
               <Text
                 fontFamily="Courier Prime"
-                fontSize="1.75rem"
+                fontSize="1.6rem"
                 fontWeight="Bold"
                 lineHeight="1.9791666667rem"
                 pl="20px"
                 my="20px"
                 // display="inline-block"
               >
-                <span style={{ color: 'tomato' }}>Job position</span>: Currently
-                i'm a fresh graduate of 2020 years
+                <span style={{ color: 'tomato' }}>Job position</span>: Today
+                i'm working at IT One Co., Ltd
               </Text>
               <Text
                 as="u"
@@ -158,21 +158,21 @@ export default function about() {
           </Stack>
           <Technicalskil />
           <Softskills />
-          <Divider
+          {/* <Divider
             orientation="horizontal"
             borderColor="#C52707"
             border="2px"
             opacity="2"
             mt="2.5rem"
-          />
+          /> */}
           <Counter />
-          <Divider
+          {/* <Divider
             orientation="horizontal"
             borderColor="#C52707"
             border="2px"
             opacity="2"
             mb="2.5rem"
-          />
+          /> */}
 
           <Heading
             as="h1"
