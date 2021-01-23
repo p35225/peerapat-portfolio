@@ -1,7 +1,7 @@
 export const skills = {
-  technologies: ['HTML5', 'CSS', 'JavaScript', 'Java', 'C#', 'Python', 'NAO robot'],
-  frameworks: ['React', 'NextJs', 'ASP.NET', 'Flask'],
+  languages: ['JavaScript', 'Java', 'Python'],
+  technologies: ['React', 'NextJs', 'Flask', 'ServiceNow'],
   databases: ['MySQL', 'MongoDB'],
-  others: ['Vscode', 'Xcode', 'Git'],
-  design: ['Figma']
+  others: ['Vscode', 'Xcode', 'Git', 'Figma']
+  // design: ['Figma']
 };
