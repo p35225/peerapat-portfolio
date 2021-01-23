@@ -31,12 +31,12 @@
   height: 100vh;
 }
 
-.--technologies {
-  background: #3e4153;
+.--languages {
+  background: #1671cf;
 }
 
-.--frameworks {
-  background: #1671cf;
+.--technologies {
+  background: #3e4153;
 }
 
 .--databases {
