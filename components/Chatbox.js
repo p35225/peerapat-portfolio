@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const messages = [
   { text: 'Hello, What you can do?' },
-  { text: 'Play game and develop something....' },
+  { text: 'Play games and Watch movies....' },
   { text: 'Hmmmm!' },
   { text: 'Go to peerapat-ch.dev i list a short story about myself.' },
   { text: 'That great' }
