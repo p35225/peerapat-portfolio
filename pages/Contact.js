@@ -60,14 +60,14 @@ export default function Contact() {
                   Email: pee35225@gmail.com
                 </Text>
                 <Text as="p" fontFamily="Rubik" fontSize="1.5rem" m="1rem">
-                  Phone: 087-501-3255
+                  Phone: +6687-501-3255
                 </Text>
                 <Text as="p" fontFamily="Rubik" fontSize="1.5rem" m="1rem">
                   Github: p35225
                 </Text>
-                <Text as="p" fontFamily="Rubik" fontSize="1.5rem" m="1rem">
+                {/* <Text as="p" fontFamily="Rubik" fontSize="1.5rem" m="1rem">
                   line: pee35225
-                </Text>
+                </Text> */}
                 <Breadcrumb fontSize="1.5rem" fontFamily="Rubik" mb="1rem">
                   <BreadcrumbItem>
                     <BreadcrumbLink href="https://github.com/p35225" isExternal>
