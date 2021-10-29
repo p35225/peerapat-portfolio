@@ -59,9 +59,6 @@ export default function Contact() {
                 <Text as="p" fontFamily="Rubik" fontSize="1.5rem" m="1rem">
                   Email: pee35225@gmail.com
                 </Text>
-                {/* <Text as="p" fontFamily="Rubik" fontSize="1.5rem" m="1rem">
-                  Phone: +6687-501-3255
-                </Text> */}
                 <Text as="p" fontFamily="Rubik" fontSize="1.5rem" m="1rem">
                   Github: p35225
                 </Text>
